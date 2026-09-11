@@ -1,0 +1,120 @@
+:root {
+  --rtm-bg: #0f172a;
+  --rtm-surface: #ffffff;
+  --rtm-surface-alt: #f8fafc;
+  --rtm-border: #e2e8f0;
+  --rtm-text-muted: #64748b;
+  --rtm-navy: #1e293b;
+  --rtm-accent: #2563eb;
+  --rtm-accent-soft: #3b82f6;
+  --rtm-good: #16a34a;
+  --rtm-warn: #d97706;
+  --rtm-bad: #dc2626;
+}
+
+body {
+  background-color: #eef1f6;
+  font-family: "Segoe UI", Roboto, -apple-system, sans-serif;
+  color: #1e293b;
+}
+
+.rtm-navbar {
+  background-color: var(--rtm-navy);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rtm-card {
+  background-color: var(--rtm-surface);
+  border: 1px solid var(--rtm-border);
+  border-radius: 0.6rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.rtm-card-header {
+  background-color: var(--rtm-surface-alt);
+  border-bottom: 1px solid var(--rtm-border);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--rtm-navy);
+}
+
+.rtm-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--rtm-text-muted);
+  font-weight: 600;
+}
+
+.rtm-sublabel {
+  font-size: 0.78rem;
+  color: var(--rtm-text-muted);
+}
+
+.rtm-metric {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--rtm-navy);
+  line-height: 1.2;
+}
+
+.rtm-icon {
+  font-size: 1.6rem;
+  color: var(--rtm-accent-soft);
+  opacity: 0.75;
+}
+
+.rtm-progress {
+  height: 6px;
+  border-radius: 4px;
+  background-color: var(--rtm-border);
+}
+
+#statusBadge {
+  padding: 0.4rem 0.75rem;
+  font-weight: 600;
+}
+
+.status-online {
+  background-color: var(--rtm-good);
+  color: white;
+}
+
+.status-offline {
+  background-color: var(--rtm-bad);
+  color: white;
+}
+
+.status-unknown {
+  background-color: #94a3b8;
+  color: white;
+}
+
+.cpu-high {
+  color: var(--rtm-bad);
+  font-weight: 700;
+}
+
+.cpu-medium {
+  color: var(--rtm-warn);
+  font-weight: 600;
+}
+
+.interface-block {
+  border: 1px solid var(--rtm-border);
+  border-radius: 0.4rem;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--rtm-surface-alt);
+  font-size: 0.85rem;
+}
+
+.interface-name {
+  font-weight: 700;
+  color: var(--rtm-navy);
+}
+
+#processTable td, #processTable th {
+  vertical-align: middle;
+  font-size: 0.85rem;
+}
